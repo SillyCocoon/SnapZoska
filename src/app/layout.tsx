@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SnapZoška",
-  description: "Created by Jozef Kurčík",
+  description: "Created by",
 };
 
 export default function RootLayout({
