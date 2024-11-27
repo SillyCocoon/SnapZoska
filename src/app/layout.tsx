@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "../components/NavBar";
+
 
 export const metadata: Metadata = {
   title: "SnapZoška",
-  description: "Created by",
+  description: "Vytvorené",
 };
 
 export default function RootLayout({
@@ -14,7 +16,12 @@ export default function RootLayout({
   return (
     <html lang="sk">
       <body>
-        {children}
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+          <main style={{ flexGrow: 1 }}>
+            {children}
+          </main>
+          <NavBar /> 
+        </div>
       </body>
     </html>
   );
